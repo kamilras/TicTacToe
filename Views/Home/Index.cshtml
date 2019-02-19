@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Kółko i Krzyżyk</h1>
+    <p class="lead">Popularna gra logiczna kółko i krzyżyk</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Logowanie</h2>
+        <p>
+            Na początku zaloguj się na swoje konto.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Login","Home", new {@class="Button"})">Login &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Rejestracja</h2>
+        <p>Jeśli nie masz konta swtórz nowe.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Register","Account", new {@class="Button"})">Register &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Profil</h2>
+        <p>Profil zalogowanego gracza</p>
+        <p><a class="btn btn-default" href="@Url.Action("Profil","Account", new {@class="Button"})">Profil &raquo;</a></p>
+    </div>
+</div>

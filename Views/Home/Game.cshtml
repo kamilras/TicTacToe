@@ -1,0 +1,64 @@
+﻿@model TicTacToe.Models.User
+@{
+    ViewBag.Title = "Game";
+}
+
+<div class="row">
+    <div class="card col-sm-4">
+        <div class="card-header">
+            <img src="~/Content/tictactoe.png" class="card-img-top" alt="...">
+            <h2 class="card-header card-title">@Model.Name</h2>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title wynik">Aktualne wygrane: @Session["user"]</h3>
+
+            <h3 class="card-title wynik">Wygrane razem: @Model.Score</h3>
+
+            <p class="card-text">Zdobądź jak najwięcej punktów na swoim koncie.</p>
+            <div class="card-footer"><a href="@Url.Action("Logout","Account")" class="btn btn-primary">Wyloguj</a></div>
+        </div>
+    </div>
+
+    <div class="gameContainer col-sm-4">
+        <div>
+            <h2>Tic Tac Toe</h2>
+        </div>
+        <h2 id="playerTurn">choose your player</h2>
+        <div class="wichPlayer">
+            <div class="o" id="oPly">o</div>
+            <div class="breakline"> | </div>
+            <div class="x" id="xPly">x</div>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td id="0" data-numcell="0" data-dirtycell="false"></td>
+                    <td id="1" data-numcell="1" data-dirtycell="false"></td>
+                    <td id="2" data-numcell="2" data-dirtycell="false"></td>
+                </tr>
+                <tr>
+                    <td id="3" data-numcell="3" data-dirtycell="false"></td>
+                    <td id="4" data-numcell="4" data-dirtycell="false"></td>
+                    <td id="5" data-numcell="5" data-dirtycell="false"></td>
+                </tr>
+                <tr>
+                    <td id="6" data-numcell="6" data-dirtycell="false"></td>
+                    <td id="7" data-numcell="7" data-dirtycell="false"></td>
+                    <td id="8" data-numcell="8" data-dirtycell="false"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="card col-sm-4">
+        <div class="card-header">
+            <img src="~/Content/tictactoe.png" class="card-img-top" alt="...">
+            <h2 class="card-header card-title">Komputer</h2>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title wynik">Aktualne wygrane: @Session["computer"]</h3>
+        </div>
+    </div>
+</div>
+

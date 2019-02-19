@@ -1,0 +1,24 @@
+﻿@model TicTacToe.Models.User
+
+@{
+    ViewBag.Title = "Profil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Szczegóły profilu: </h2>
+
+<div class="row">
+    <div class="col-offset-3">
+        <ul class="list-group">
+            <li class="list-group-item">Imię : @Html.DisplayFor(modelItem => Model.Name)</li>
+            <li class="list-group-item">ID: @Html.DisplayFor(modelItem => Model.Id)</li>
+            <li class="list-group-item">Hasło: @Html.DisplayFor(modelItem => Model.Password)</li>
+            <li class="list-group-item">Wynik: @Html.DisplayFor(modelItem => Model.Score)</li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
