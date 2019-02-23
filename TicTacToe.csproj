@@ -166,6 +166,10 @@
     <Compile Include="Migrations\201902190020532_ChangeDataAnnotationsForConfirmPassword.Designer.cs">
       <DependentUpon>201902190020532_ChangeDataAnnotationsForConfirmPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902211615074_AddAttributeForPassword.cs" />
+    <Compile Include="Migrations\201902211615074_AddAttributeForPassword.Designer.cs">
+      <DependentUpon>201902211615074_AddAttributeForPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
@@ -238,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902190020532_ChangeDataAnnotationsForConfirmPassword.resx">
       <DependentUpon>201902190020532_ChangeDataAnnotationsForConfirmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902211615074_AddAttributeForPassword.resx">
+      <DependentUpon>201902211615074_AddAttributeForPassword.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

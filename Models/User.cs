@@ -17,9 +17,11 @@ namespace TicTacToe.Models
 
         [Required]
         [Display(Name = "Hasło")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         [Display(Name = "Potwierdź hasło")]
+        [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
 
         [Display(Name = "Wynik")]

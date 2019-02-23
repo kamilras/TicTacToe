@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h1>Kółko i Krzyżyk</h1>
     <p class="lead">Popularna gra logiczna kółko i krzyżyk</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <p><a href="@Url.Action("Game","Home", new {@class="Button"})" class="btn btn-primary btn-lg">Zagraj teraz &raquo;</a></p>
 </div>
 
 <div class="row">
@@ -14,7 +14,7 @@
         <p>
             Na początku zaloguj się na swoje konto.
         </p>
-        <p><a class="btn btn-default" href="@Url.Action("Login","Home", new {@class="Button"})">Login &raquo;</a></p>
+        <p><a class="btn btn-default" href="@Url.Action("Login","Account", new {@class="Button"})">Login &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Rejestracja</h2>

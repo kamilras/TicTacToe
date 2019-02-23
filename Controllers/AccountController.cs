@@ -61,7 +61,7 @@ namespace TicTacToe.Controllers
             {
                 using (UserContext db = new UserContext())
                 {
-                    var usr = db.Users.Where(u => u.Name.Equals(user.Name) && u.Password.Equals(user.Password)).FirstOrDefault();
+                    var usr = db.Users.Where(u => u.Name == user.Name && u.Password == user.Password).FirstOrDefault();
                     if (usr != null)
                     {
                         HttpContext.Session["Id"] = usr.Id;

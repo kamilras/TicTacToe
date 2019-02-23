@@ -103,3 +103,4 @@ C:\Users\kamil_000\source\repos\TicTacToe\obj\Debug\TicTacToe.Migrations.InitDat
 C:\Users\kamil_000\source\repos\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
 C:\Users\kamil_000\source\repos\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
 C:\Users\kamil_000\source\repos\TicTacToe\obj\Debug\TicTacToe.Migrations.ChangeDataAnnotationsForConfirmPassword.resources
+C:\Users\kamil_000\source\repos\TicTacToe\obj\Debug\TicTacToe.Migrations.AddAttributeForPassword.resources
