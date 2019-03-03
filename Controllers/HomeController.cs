@@ -64,7 +64,7 @@ namespace TicTacToe.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Strona kontaktowa";
+            ViewBag.Message ="Strona kontaktowa";
             return View();
         }
     }
